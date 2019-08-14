@@ -54,3 +54,17 @@ HANDS ON SCRAPY PACKAGE
 		scraping data. we use proxy there to bypass it.
 		we send requests and can also handle the response back
 		from server.
+
+5. Selectors
+	* Selectors are some if condition that go to a website, apply some conditions
+	and extract data from it.
+	TWO SELECTORS
+	* CSS
+	* XPATH	
+	==========
+	# EXAMPLES
+	==========
+	response.css('title::text').extract()
+	response.css('span.text::text').extract()
+	response.xpath('//title/text()').extract()
+	response.xpath('//span[@class="text"]/text()').extract()
